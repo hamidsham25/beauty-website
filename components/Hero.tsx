@@ -1,8 +1,19 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
       {/* Diagonal Background - Jevelin Style */}
@@ -22,7 +33,9 @@ export default function Hero() {
           {/* Left Side - Text Content */}
           <div className="space-y-8">
             {/* Logo Frame */}
-            <div className="relative">
+            <div className={`relative transition-all duration-1000 ease-out ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
               <div className="w-32 h-32 border-2 border-gray-900 flex items-center justify-center mb-8">
                 <span className="font-playfair text-4xl font-bold text-gray-900">BL</span>
               </div>
@@ -32,22 +45,30 @@ export default function Hero() {
             </div>
 
             {/* Spaced Letters */}
-            <div className="space-y-2">
-              <p className="font-playfair text-lg tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 𝓛𝓲𝓷𝓭𝓮𝓷</p>
+            <div className={`space-y-2 transition-all duration-1000 ease-out delay-200 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
+              <p className="font-playfair text-3xl md:text-4xl tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 𝓛𝓲𝓷𝓭𝓮𝓷</p>
             </div>
 
             {/* Main Headings */}
             <div className="space-y-4">
-              <h1 className="font-playfair text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 leading-tight">
+              <h1 className={`font-playfair text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 leading-tight transition-all duration-1000 ease-out delay-400 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}>
                 𝑌𝑜𝑢𝑟 𝐵𝑒𝑎𝑢𝑡𝑦
               </h1>
-              <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h2 className={`font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-1000 ease-out delay-600 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}>
                 𝑜𝑢𝑟 𝑃𝑎𝑠𝑠𝑖𝑜𝑛
               </h2>
             </div>
 
             {/* Scroll Text */}
-            <div className="pt-8">
+            <div className={`pt-8 transition-all duration-1000 ease-out delay-800 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
               <p className="text-sm tracking-widest text-gray-600 uppercase">
                 SCROLL DOWN FOR SOME MAGIC.
               </p>

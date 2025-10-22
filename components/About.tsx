@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Simple centered title like Jevelin */}
         <div className="text-center mb-20">

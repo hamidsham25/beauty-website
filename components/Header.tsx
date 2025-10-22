@@ -21,17 +21,17 @@ export default function Header() {
       <nav className="container-max py-4 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="#home" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
             <div className="w-12 h-12 border-2 border-gray-900 flex items-center justify-center">
               <span className="text-gray-900 font-bold text-lg">BL</span>
             </div>
             <span className="font-playfair text-xl font-semibold text-gray-900 tracking-wider">BEAUTY LINDEN</span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <a href="#home" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">HOME</a>
-            <a href="#services" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">SERVICES</a>
+            <a href="#services-overview" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">SERVICES</a>
             <a href="#about" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">ABOUT</a>
             <a href="#gallery" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">GALLERY</a>
             <a href="#contact" className="text-gray-900 hover:text-gray-700 transition-colors font-medium tracking-wider text-sm uppercase">CONTACT</a>
@@ -84,7 +84,7 @@ export default function Header() {
           <div className="lg:hidden mt-4 py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
               <a href="#home" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">HOME</a>
-              <a href="#services" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">SERVICES</a>
+              <a href="#services-overview" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">SERVICES</a>
               <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">ABOUT</a>
               <a href="#gallery" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">GALLERY</a>
               <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium tracking-wider text-sm uppercase">CONTACT</a>

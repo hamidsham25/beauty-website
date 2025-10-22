@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Gallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const gallerySlides = [
     {
       id: 1,
@@ -28,29 +28,38 @@ export default function Gallery() {
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % gallerySlides.length);
-  };
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % gallerySlides.length);
+    }, 5000);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + gallerySlides.length) % gallerySlides.length);
-  };
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
   return (
-    <section id="gallery" className="relative h-[80vh] overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={gallerySlides[currentSlide].backgroundImage}
-          alt={`Gallery slide ${currentSlide + 1}`}
-          className="w-full h-full object-cover"
-        />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+    <section id="gallery" className="relative h-[85vh] overflow-hidden">
+      {/* Background Images Container */}
+      <div className="absolute inset-0 flex transition-transform duration-1000 ease-in-out" 
+           style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        {gallerySlides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className="w-full h-full flex-shrink-0"
+          >
+            <img 
+              src={slide.backgroundImage}
+              alt={`Gallery slide ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+            {/* Light Overlay for better text contrast */}
+            <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+          </div>
+        ))}
       </div>
 
       {/* Section Title - Fixed at top */}
@@ -72,24 +81,6 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button 
-        onClick={prevSlide}
-        className="absolute left-8 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-40 transition-all duration-300 p-4 rounded-full hover:scale-110"
-      >
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      
-      <button 
-        onClick={nextSlide}
-        className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-40 transition-all duration-300 p-4 rounded-full hover:scale-110"
-      >
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
 
       {/* Slider Indicators */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">

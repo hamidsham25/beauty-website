@@ -54,32 +54,50 @@ export default function Services() {
       <div className="container-max">
         
         {/* Services Overview - Jevelin Style */}
-        <div className="mb-20">
+        <div id="services-overview" className="mb-20 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* Service Card 1 - Hair */}
             <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50">
+              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
                 <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Friseur</h3>
                 <p className="text-sm text-gray-600">Professionelle Haarpflege und Styling für jeden Anlass</p>
+                
+                {/* Hover Image */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Hair Styling Tools"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Service Card 2 - Nails */}
             <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50">
+              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
                 <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Maniküre</h3>
                 <p className="text-sm text-gray-600">Elegante Nagelpflege und kreative Nageldesigns</p>
+                
+                {/* Hover Image */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Nail Art Tools"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
 
@@ -107,14 +125,23 @@ export default function Services() {
 
             {/* Service Card 4 - Wellness */}
             <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50">
+              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
                 <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Wellness</h3>
                 <p className="text-sm text-gray-600">Entspannung und Wohlbefinden für Körper und Geist</p>
+                
+                {/* Hover Image */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img 
+                    src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    alt="Wellness Spa"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -132,7 +159,7 @@ export default function Services() {
               Preise und Services
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Die Leistungen, die wir in Bochum anbieten. Klicken Sie auf eine Leistung, um Details und Preise zu sehen.
+              Die Leistungen, die wir anbieten. Klicken Sie auf eine Leistung, um Details und Preise zu sehen.
             </p>
           </div>
 
@@ -142,7 +169,7 @@ export default function Services() {
               {/* Services List */}
               <div className="divide-y divide-gray-200">
                 {services.map((service, index) => (
-                  <div key={index}>
+                  <div key={index} className="overflow-hidden">
                     {/* Service Header - Clickable */}
                     <button
                       onClick={() => toggleService(index)}
@@ -150,8 +177,8 @@ export default function Services() {
                     >
                       <span className="font-semibold text-gray-900">{service.title}</span>
                       <svg 
-                        className={`w-5 h-5 text-gray-400 transition-transform ${
-                          expandedService === index ? 'rotate-180' : ''
+                        className={`w-5 h-5 text-gray-400 transition-all duration-300 ease-in-out ${
+                          expandedService === index ? 'rotate-180 scale-110' : 'rotate-0 scale-100'
                         }`} 
                         fill="none" 
                         stroke="currentColor" 
@@ -161,8 +188,14 @@ export default function Services() {
                       </svg>
                     </button>
                     
-                    {/* Service Details - Expandable */}
-                    {expandedService === index && (
+                    {/* Service Details - Expandable with proper accordion animation */}
+                    <div 
+                      className={`transition-all duration-300 ease-in-out ${
+                        expandedService === index 
+                          ? 'max-h-96 opacity-100' 
+                          : 'max-h-0 opacity-0'
+                      }`}
+                    >
                       <div className="px-6 pb-6 bg-gray-50">
                         <p className="text-gray-600 mb-4 leading-relaxed">
                           {service.description}
@@ -171,14 +204,17 @@ export default function Services() {
                         {/* Price List */}
                         <div className="space-y-2">
                           {service.prices.map((item, priceIndex) => (
-                            <div key={priceIndex} className="flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0">
+                            <div 
+                              key={priceIndex} 
+                              className="flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0"
+                            >
                               <span className="text-gray-700">{item.service}</span>
                               <span className="font-semibold text-gray-900">{item.price}</span>
                             </div>
                           ))}
                         </div>
                       </div>
-                    )}
+                    </div>
                   </div>
                 ))}
               </div>
