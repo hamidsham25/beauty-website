@@ -53,20 +53,19 @@ export default function Services() {
     <section id="services" className="section-padding bg-white">
       <div className="container-max">
         
-        {/* Services Overview - Jevelin Style */}
+        {/* Services Overview - New Design */}
         <div id="services-overview" className="mb-20 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-5 max-w-6xl mx-auto">
             
             {/* Service Card 1 - Hair */}
-            <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
-                <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center">
+              <div className="group bg-gray-100 aspect-square flex flex-col items-center justify-center mb-6 md:mb-4 transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
+                <div className="mb-2">
+                  <svg className="w-8 h-8 text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Friseur</h3>
-                <p className="text-sm text-gray-600">Professionelle Haarpflege und Styling für jeden Anlass</p>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:opacity-0 transition-opacity duration-300">Friseur</h3>
                 
                 {/* Hover Image */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -77,18 +76,18 @@ export default function Services() {
                   />
                 </div>
               </div>
+              <p className="text-sm text-gray-600">Professionelle Haarpflege und Styling für jeden Anlass</p>
             </div>
 
             {/* Service Card 2 - Nails */}
-            <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
-                <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center">
+              <div className="group bg-gray-100 aspect-square flex flex-col items-center justify-center mb-6 md:mb-4 transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
+                <div className="mb-2">
+                  <svg className="w-8 h-8 text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Maniküre</h3>
-                <p className="text-sm text-gray-600">Elegante Nagelpflege und kreative Nageldesigns</p>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:opacity-0 transition-opacity duration-300">Maniküre</h3>
                 
                 {/* Hover Image */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -99,18 +98,18 @@ export default function Services() {
                   />
                 </div>
               </div>
+              <p className="text-sm text-gray-600">Elegante Nagelpflege und kreative Nageldesigns</p>
             </div>
 
             {/* Service Card 3 - Make-up */}
-            <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
-                <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center">
+              <div className="group bg-gray-100 aspect-square flex flex-col items-center justify-center mb-6 md:mb-4 transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
+                <div className="mb-2">
+                  <svg className="w-8 h-8 text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Make-up</h3>
-                <p className="text-sm text-gray-600">Professionelle Make-up-Anwendung für jeden Anlass</p>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:opacity-0 transition-opacity duration-300">Make-up</h3>
                 
                 {/* Hover Image */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -121,18 +120,18 @@ export default function Services() {
                   />
                 </div>
               </div>
+              <p className="text-sm text-gray-600">Professionelle Make-up-Anwendung für jeden Anlass</p>
             </div>
 
             {/* Service Card 4 - Wellness */}
-            <div className="group cursor-pointer">
-              <div className="bg-gray-100 p-8 text-center transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
-                <div className="mb-4">
-                  <svg className="w-12 h-12 mx-auto text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center">
+              <div className="group bg-gray-100 aspect-square flex flex-col items-center justify-center mb-6 md:mb-4 transition-all duration-300 hover:bg-gray-50 relative overflow-hidden">
+                <div className="mb-2">
+                  <svg className="w-8 h-8 text-gray-900 group-hover:opacity-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Wellness</h3>
-                <p className="text-sm text-gray-600">Entspannung und Wohlbefinden für Körper und Geist</p>
+                <h3 className="text-base font-semibold text-gray-900 group-hover:opacity-0 transition-opacity duration-300">Wellness</h3>
                 
                 {/* Hover Image */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -143,6 +142,7 @@ export default function Services() {
                   />
                 </div>
               </div>
+              <p className="text-sm text-gray-600">Entspannung und Wohlbefinden für Körper und Geist</p>
             </div>
           </div>
         </div>

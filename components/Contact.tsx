@@ -20,14 +20,14 @@ export default function Contact() {
               <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Adresse:</h4>
-                  <p className="text-gray-600">Hattingerstr. 824, 44879 Bochum</p>
+                  <p className="text-gray-600">Musterstraße 123, 12345 Musterstadt</p>
                 </div>
                 
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Telefon:</h4>
                   <p className="text-gray-600">
-                    <a href="tel:023493244984" className="hover:text-gray-800 transition-colors">
-                      0234/93244984
+                    <a href="tel:01234567890" className="hover:text-gray-800 transition-colors">
+                      0123/4567890
                     </a>
                   </p>
                 </div>
