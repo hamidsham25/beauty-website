@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,10 +20,10 @@ export default function Hero() {
       {/* Diagonal Background - Jevelin Style */}
       <div className="absolute inset-0">
         {/* Base pink background */}
-        <div className="absolute inset-0 bg-pink-200"></div>
+        <div className="absolute inset-0" style={{ backgroundColor: '#f5c8ca' }}></div>
         {/* Beige diagonal section */}
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(135deg, #fef3c7 0%, #fef3c7 50%, transparent 50%)'
+          background: 'linear-gradient(45deg, #f1e9e3 0%, #f1e9e3 50%, transparent 50%)'
         }}></div>
       </div>
 
@@ -75,24 +76,22 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Side - Placeholder - Hidden on Mobile */}
-          <div className="relative hidden lg:block">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-pink-100 to-amber-100">
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-40 h-40 bg-gradient-to-br from-pink-200 to-amber-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-                    <span className="text-6xl">👩</span>
-                  </div>
-                  <p className="text-gray-600 font-medium">Elegant Beauty Model</p>
-                  <p className="text-sm text-gray-500">Professional Portrait</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full opacity-70"></div>
-            <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full opacity-70"></div>
-          </div>
+          {/* Right Side - Spacer for Grid Layout */}
+          <div className="hidden lg:block"></div>
+        </div>
+      </div>
+
+      {/* Hero Image - Positioned at bottom of section - Desktop only */}
+      <div className="absolute bottom-0 right-0 z-10 hidden lg:block w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl px-8">
+        <div className="relative w-full" style={{ height: '90vh' }}>
+          <Image
+            src="/images/hero-img.png"
+            alt="Beauty Hannover"
+            fill
+            className="object-contain"
+            style={{ objectPosition: 'bottom right' }}
+            priority
+          />
         </div>
       </div>
 

@@ -25,7 +25,7 @@ export default function Header() {
             <div className="w-12 h-12 border-2 border-gray-900 flex items-center justify-center">
               <span className="text-gray-900 font-bold text-lg">BH</span>
             </div>
-            <span className="font-playfair text-xl font-semibold text-gray-900 tracking-wider">BEAUTY Hannover</span>
+            <span className="font-playfair text-xl font-semibold text-gray-900 tracking-wider">BEAUTY HANNOVER</span>
           </a>
 
           {/* Desktop Navigation */}
