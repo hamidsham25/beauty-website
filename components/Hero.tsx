@@ -48,7 +48,7 @@ export default function Hero() {
             <div className={`space-y-2 transition-all duration-1000 ease-out delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8' 
             }`}>
-              <p className="font-playfair text-3xl lg:text-3xl xl:text-4xl tracking-[0.2em] lg:tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 ��𝓷�𝓸𝓿𝓮�</p>
+              <p className="font-playfair text-3xl lg:text-3xl xl:text-4xl tracking-[0.2em] lg:tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 𝓗𝓪𝓷𝓷𝓸𝓿𝓮𝓻</p>
             </div>
 
             {/* Main Headings */}
