@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-700 mb-6 max-w-md leading-relaxed">
-              Ihr vertrauensvoller Beauty-Salon in Bochum. Wir verwandeln Ihre Wünsche 
+              Ihr vertrauensvoller Beauty-Salon in Hannover. Wir verwandeln Ihre Wünsche 
               in wunderschöne Realität mit Leidenschaft und Können.
             </p>
             <p className="text-lg font-playfair text-gray-900 italic">
@@ -50,11 +50,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 font-playfair">Kontakt</h3>
             <div className="space-y-2 text-gray-700">
-              <p>Hattingerstr. 824</p>
-              <p>44879 Bochum</p>
+              <p>Musterstraße 123</p>
+              <p>30167 Hannover</p>
               <p>
-                <a href="tel:023493244984" className="hover:text-gray-900 transition-colors">
-                  0234/93244984
+                <a href="tel:0123/4567890" className="hover:text-gray-900 transition-colors">
+                  0123/4567890
                 </a>
               </p>
               <p className="mt-4">
@@ -74,7 +74,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-300 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 text-sm">
-            © 2024 Beauty Linden. Alle Rechte vorbehalten.
+            © 2024 Beauty Hannover. Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">Impressum</a>

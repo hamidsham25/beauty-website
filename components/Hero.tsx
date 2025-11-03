@@ -37,7 +37,7 @@ export default function Hero() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               <div className="w-48 h-48 lg:w-32 lg:h-32 border-2 border-gray-900 flex items-center justify-center mb-6 lg:mb-8 mx-auto lg:mx-0">
-                <span className="font-playfair text-6xl lg:text-4xl font-bold text-gray-900">BL</span>
+                <span className="font-playfair text-6xl lg:text-4xl font-bold text-gray-900">BH</span>
               </div>
               {/* Decorative Elements */}
               <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 w-4 h-4 lg:w-8 lg:h-8 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full opacity-60"></div>
@@ -46,9 +46,9 @@ export default function Hero() {
 
             {/* Spaced Letters */}
             <div className={`space-y-2 transition-all duration-1000 ease-out delay-200 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8' 
             }`}>
-              <p className="font-playfair text-3xl lg:text-3xl xl:text-4xl tracking-[0.2em] lg:tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 𝓛𝓲𝓷𝓭𝓮𝓷</p>
+              <p className="font-playfair text-3xl lg:text-3xl xl:text-4xl tracking-[0.2em] lg:tracking-[0.3em] text-gray-700">𝓑𝓮𝓪𝓾𝓽𝔂 ��𝓷�𝓸𝓿𝓮�</p>
             </div>
 
             {/* Main Headings */}

@@ -23,9 +23,9 @@ export default function Header() {
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300">
             <div className="w-12 h-12 border-2 border-gray-900 flex items-center justify-center">
-              <span className="text-gray-900 font-bold text-lg">BL</span>
+              <span className="text-gray-900 font-bold text-lg">BH</span>
             </div>
-            <span className="font-playfair text-xl font-semibold text-gray-900 tracking-wider">BEAUTY LINDEN</span>
+            <span className="font-playfair text-xl font-semibold text-gray-900 tracking-wider">BEAUTY Hannover</span>
           </a>
 
           {/* Desktop Navigation */}

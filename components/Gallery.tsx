@@ -66,7 +66,7 @@ export default function Gallery() {
       <div className="absolute top-16 left-1/2 transform -translate-x-1/2 z-20">
         <div className="bg-white p-8 shadow-lg">
           <h2 className="font-playfair text-5xl md:text-6xl font-bold text-gray-900 text-center">
-            Beauty Linden
+            Beauty Hannover
           </h2>
           <h3 className="font-playfair text-2xl md:text-3xl font-semibold text-gray-800 text-center">
             Unsere Galerie
