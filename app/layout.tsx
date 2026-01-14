@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Beauty Linden - Ihr Beauty-Salon in Bochum',
-  description: 'Professionelle Beauty-Behandlungen in Bochum. Hair, Nails, Make-Up und mehr. Jetzt Termin buchen!',
+  title: 'Beauty Hannover - Ihr Beauty-Salon in Hannover',
+  description: 'Professionelle Beauty-Behandlungen in Hannover. Hair, Nails, Make-Up und mehr. Jetzt Termin buchen!',
 }
 
 export default function RootLayout({
