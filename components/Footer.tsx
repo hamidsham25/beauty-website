@@ -10,7 +10,7 @@ export default function Footer() {
                 <span className="text-gray-900 font-bold text-lg">BL</span>
               </div>
               <div>
-                <span className="font-playfair text-2xl font-bold text-gray-900">Beauty Linden</span>
+                <span className="font-playfair text-2xl font-bold text-gray-900">Beauty Hannover</span>
                 <p className="text-xs text-gray-600 -mt-1">Bochum</p>
               </div>
             </div>
