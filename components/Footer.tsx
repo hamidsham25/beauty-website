@@ -7,11 +7,11 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 border-2 border-gray-900 flex items-center justify-center">
-                <span className="text-gray-900 font-bold text-lg">BL</span>
+                <span className="text-gray-900 font-bold text-lg">BH</span>
               </div>
               <div>
                 <span className="font-playfair text-2xl font-bold text-gray-900">Beauty Hannover</span>
-                <p className="text-xs text-gray-600 -mt-1">Bochum</p>
+                <p className="text-xs text-gray-600 -mt-1">Hannover</p>
               </div>
             </div>
             <p className="text-gray-700 mb-6 max-w-md leading-relaxed">
